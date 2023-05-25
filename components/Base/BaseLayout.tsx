@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Head from 'next/head';
 
 interface BaseLayoutProps {
   children: ReactNode;
@@ -8,11 +9,16 @@ interface BaseLayoutProps {
 
 const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
-    <div>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>Carl Gützkow</title>
+      </Head>
+      <div>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </>
   );
 };
 
