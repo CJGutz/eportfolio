@@ -9,7 +9,7 @@ const Header = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
 
   return (
-    <header className="bg-off-white">
+    <header className="bg-transparent">
       <nav className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between">
         <div className="flex items-center justify-between">
           <div className="z-20">
@@ -41,7 +41,7 @@ const Header = () => {
             openMobileNav
               ? 'translate-y-0 opacity-100'
               : 'opacity-0 -translate-y-full'
-          } absolute z-10 inset-x-0 w-full bg-off-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-y-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none`}
+          } absolute z-10 inset-x-0 w-full bg-transparent px-6 py-4 shadow-md transition-all duration-300 ease-in-out lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-y-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none`}
         >
           <div className="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
             {links.map(({ name, href }) => (

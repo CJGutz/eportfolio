@@ -3,7 +3,7 @@ import { links } from './BaseLayout';
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-white md:flex md:items-center md:justify-around md:p-6 bg-off-white">
+    <footer className="p-4 bg-white md:flex md:items-center md:justify-around md:p-6 bg-off-white shadow-[0px_0px_10px_2px_rgba(0,0,0,0.3)]">
       <span className="text-sm text-gray-500 sm:text-center">
         © {new Date().getFullYear()}{' '}
         <Link
