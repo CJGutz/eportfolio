@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import BaseLayout from '../components/Base/BaseLayout';
 
-const AboutPage: NextPage = () => {
+const CoursesPage: NextPage = () => {
   return (
     <BaseLayout>
       <div>
@@ -13,4 +13,4 @@ const AboutPage: NextPage = () => {
   );
 };
 
-export default AboutPage;
+export default CoursesPage;
