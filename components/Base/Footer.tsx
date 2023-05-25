@@ -16,9 +16,9 @@ const Footer = () => {
       </span>
       <ul className="flex flex-wrap items-center mt-3 md:mt-0">
         {links.map(({ name, href }) => (
-          <li key={name}>
+          <li key={name} className="mvn-button">
             <Link
-              className="mr-4 text-sm text-gray-500 hover:underline md:mr-6"
+              className="mr-4 text-sm text-gray-500 hover:text-blue-500 md:mr-6"
               href={href}
             >
               {name}

@@ -12,7 +12,7 @@ const Header = () => {
     <header className="bg-off-white">
       <nav className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between">
         <div className="flex items-center justify-between">
-          <div className='z-20'>
+          <div className="z-20">
             <Link
               className="text-2xl font-bold text-gray-800 hover:text-gray-700 lg:text-3xl"
               href="/"
@@ -47,7 +47,7 @@ const Header = () => {
             {links.map(({ name, href }) => (
               <Link
                 key={name}
-                className="text-sm font-medium text-gray-700 hover:text-blue-500 lg:mx-4 lg:my-0"
+                className="text-sm font-medium text-gray-700 hover:text-blue-500 lg:mx-4 lg:my-0 lg:mvn-button"
                 href={href}
               >
                 {name}

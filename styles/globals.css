@@ -17,13 +17,21 @@ div {
   }
 }
 
-a, button {
+a,
+button {
   transition: all 300ms ease-in-out;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+@layer components {
+  .mvn-button {
+    @apply transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0;
+  }
 }
 
 * {

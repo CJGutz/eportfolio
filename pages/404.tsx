@@ -12,7 +12,7 @@ const PageNotFound: NextPage = () => {
             className="py-4 px-8 text-xl font-semibold
           bg-transparent border-2 border-black rounded 
           hover:bg-off-white hover:border-transparent 
-          transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+          mvn-button"
           >
             Home
           </button>

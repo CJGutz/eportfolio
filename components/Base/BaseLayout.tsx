@@ -20,7 +20,7 @@ const BaseLayout = ({ children }: BaseLayoutProps) => {
       <Head>
         <title>Carl Gützkow</title>
       </Head>
-      <div className='flex flex-col justify-between items-stretch min-h-screen'>
+      <div className="flex flex-col justify-between items-stretch min-h-screen">
         <Header />
         <main>{children}</main>
         <Footer />
