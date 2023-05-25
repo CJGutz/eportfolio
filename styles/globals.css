@@ -17,6 +17,15 @@ div {
   }
 }
 
+a, button {
+  transition: all 300ms ease-in-out;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 * {
   word-break: break-word;
 }
