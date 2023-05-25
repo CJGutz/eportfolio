@@ -17,17 +17,6 @@ div {
   }
 }
 
-button,
-a {
-  transition: filter 300ms;
-}
-
-button:hover,
-a:hover {
-  transition: filter 300ms;
-  filter: brightness(80%);
-}
-
 * {
   word-break: break-word;
 }
