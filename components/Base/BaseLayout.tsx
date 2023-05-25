@@ -7,13 +7,20 @@ interface BaseLayoutProps {
   children: ReactNode;
 }
 
+export const links = [
+  { name: 'About', href: '/about' },
+  { name: 'Skills', href: '/skills' },
+  { name: 'Experience', href: '/experience' },
+  { name: 'Courses', href: '/courses' },
+] as { name: string; href: string }[];
+
 const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <>
       <Head>
         <title>Carl Gützkow</title>
       </Head>
-      <div>
+      <div className='flex flex-col justify-between items-stretch min-h-screen'>
         <Header />
         <main>{children}</main>
         <Footer />

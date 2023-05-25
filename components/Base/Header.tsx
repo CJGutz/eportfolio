@@ -3,16 +3,10 @@ import cross from '/static/icons/cross.svg';
 import hamburger from '/static/icons/hamburger.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { links } from './BaseLayout';
 
 const Header = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
-
-  const links = [
-    { name: 'About', href: '/about' },
-    { name: 'Skills', href: '/skills' },
-    { name: 'Experience', href: '/experience' },
-    { name: 'Courses', href: '/courses' },
-  ] as { name: string; href: string }[];
 
   return (
     <header className="bg-white dark:bg-gray-900">
