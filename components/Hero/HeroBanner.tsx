@@ -19,6 +19,14 @@ const HeroBanner = () => {
 
   return (
     <div className="overflow-hidden relative">
+      <div className='flex relative justify-center'>
+        <Image
+        className='absolute top-0 m-5'
+        alt='Carl Gützkow'
+        src={carl}
+        width={500}
+        />
+      </div>
       <div
         className="text-transparent  font-mono lg:text-[30rem] text-[20rem] m-10"
         style={{ WebkitTextStroke: '7px black' }}
