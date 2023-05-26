@@ -1,14 +1,11 @@
 import type { NextPage } from 'next';
 import BaseLayout from '../components/Base/BaseLayout';
+import HeroBanner from '../components/Hero/HeroBanner';
 
 const Home: NextPage = () => {
   return (
     <BaseLayout>
-      <div>
-        <h1 className="text-4xl text-center p-12">
-          This website is currently under construction
-        </h1>
-      </div>
+      <HeroBanner />
     </BaseLayout>
   );
 };
