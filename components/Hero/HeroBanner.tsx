@@ -1,49 +1,42 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import BackgroundMovingText from './BackgroundText';
 import carl from '/static/carl.jpg';
+import { useRef, useEffect, useState } from 'react';
 
 const HeroBanner = () => {
-  const [scrollAmount, setScrollAmount] = useState(0);
+  const portrait = useRef<HTMLImageElement>(null);
+  const [bboxSize, setBBoxSize] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const scrollAmount = scrollTop / window.innerHeight;
-      setScrollAmount(scrollAmount * 100);
+    const updateBBoxSize = () => {
+      const imageElement = portrait.current;
+      const imageSize = imageElement?.getBoundingClientRect();
+      console.log("Updated!!")
+      setBBoxSize(imageSize?.width || 0);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
+
+    updateBBoxSize();
+
+    window.addEventListener('resize', updateBBoxSize);
+    return () => window.removeEventListener('resize', updateBBoxSize);
+  }, []);
 
   return (
     <div className="overflow-hidden relative">
-      <div className='flex relative justify-center'>
+      <div className="flex relative justify-center">
+        <div
+          className={`absolute bg-gradient-radial p-5 from-slate-500 to-off-white z-10 border-4 top-32 ml-16 border-black background-box`}
+          style={{ width: `${bboxSize-40}px`, height: `${bboxSize-40}px` }}
+        ></div>
         <Image
-        className='absolute top-0 m-5'
-        alt='Carl Gützkow'
-        src={carl}
-        width={500}
+          className="absolute top-20 p-5 z-10 "
+          alt="Carl Gützkow"
+          src={carl}
+          width={500}
+          ref={portrait}
         />
       </div>
-      <div
-        className="text-transparent  font-mono lg:text-[30rem] text-[20rem] m-10"
-        style={{ WebkitTextStroke: '7px black' }}
-      >
-        <p
-          className="md:ml-20 -mt-44 break-keep"
-          style={{ transform: `translateX(-${scrollAmount}rem)` }}
-        >
-          Carl
-        </p>
-        <p
-          className="-mt-48 break-keep"
-          style={{ transform: `translateX(${scrollAmount * 2}rem)` }}
-        >
-          Gützkow
-        </p>
-      </div>
+      <BackgroundMovingText />
     </div>
   );
 };
