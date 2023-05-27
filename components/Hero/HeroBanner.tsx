@@ -74,14 +74,12 @@ const HeroBanner = () => {
               <>
                 <span
                   key={text}
-                  className="md:text-2xl text-sm text-center px-3 whitespace-nowrap"
+                  className="md:text-2xl text-md text-center px-3 whitespace-nowrap"
                 >
                   {text}
                 </span>
                 {count < summarySkills.length - 1 && (
-                  <span key={text} className="whitespace-nowrap">
-                    {' ⚬ '}
-                  </span>
+                  <span>{' ⚬ '}</span>
                 )}
               </>
             ))}
