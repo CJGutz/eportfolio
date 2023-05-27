@@ -48,7 +48,7 @@ const HeroBanner = () => {
 
   return (
     <div className="">
-      <div className="absolute top-0 overflow-hidden">
+      <div className="absolute top-0 overflow-visible">
         <BackgroundMovingText />
       </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2 place-items-center w-full full">

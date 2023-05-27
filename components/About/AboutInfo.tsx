@@ -1,7 +1,7 @@
 const AboutInfo = () => {
   return (
-    <div className="w-screen h-screen">
-      <h1 id="about">About Me</h1>
+    <div className="w-full mt-96 p-10">
+      <h1 id="about" className="text-4xl font-bold text-center">About me</h1>
     </div>
   );
 };
