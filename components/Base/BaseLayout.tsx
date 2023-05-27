@@ -20,9 +20,9 @@ const BaseLayout = ({ children }: BaseLayoutProps) => {
       <Head>
         <title>Carl Gützkow</title>
       </Head>
-      <div className="relative flex flex-col justify-between items-stretch min-h-screen bg-gradient-radial from-light-red to-light-blue">
+      <div className="flex flex-col overflow-hidden justify-between items-stretch min-h-screen bg-gradient-radial from-light-red to-light-blue">
         <Header />
-        <main>{children}</main>
+        <main className="container relative">{children}</main>
         <Footer />
       </div>
     </>

@@ -40,15 +40,15 @@ const HeroBanner = () => {
       name: 'Email',
       href: 'mailto:cjgutzkow@gmail.com',
       icon: email,
-    }
-  ]
+    },
+  ];
 
   return (
-    <div className="overflow-hidden relative h-screen">
+    <div className="overflow-hidden h-screen">
       <div className="absolute top-0">
-      <BackgroundMovingText />
+        <BackgroundMovingText />
       </div>
-      <div className="relative flex flex-col lg:flex-row w-full h-full">
+      <div className="relative flex flex-col lg:flex-row w-full h-full lg:-top-32">
         <div className="relative mx-20 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px]">
           <div
             className={`absolute top-16 ml-16 bg-gradient-radial from-slate-500 to-off-white blur-md border-4 border-black`}
@@ -66,21 +66,18 @@ const HeroBanner = () => {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="text-5xl font-bold m-5">👋 Welcome</div>
+          <div className="text-center text-5xl font-bold m-5">
+            👋 Welcome, I&apos;m Carl
+          </div>
           <div className="flex flex-row justify-center">
             {socialButtons.map(({ name, href, icon }) => (
-              <Link key={name} href={href} className='mx-2'>
-                <Image
-                  alt={name}
-                  src={icon}
-                  width={50}
-                />
+              <Link key={name} href={href} className="mx-2">
+                <Image alt={name} src={icon} width={50} />
               </Link>
             ))}
           </div>
         </div>
       </div>
- 
     </div>
   );
 };
