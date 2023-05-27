@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import BackgroundMovingText from './BackgroundText';
-import carl from '/static/carl.jpg';
+import carl from '/static/carl/eisolutions-profile.jpg';
 import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 import linkedin from '/static/icons/linkedin.svg';
@@ -16,7 +16,6 @@ const HeroBanner = () => {
     const updateBBoxSize = () => {
       const imageElement = portrait.current;
       const imageSize = imageElement?.getBoundingClientRect();
-      console.log('Updated!!');
       setBBoxSize(imageSize?.width || 0);
     };
 
@@ -53,7 +52,7 @@ const HeroBanner = () => {
       </div>
       <div className="relative grid grid-cols-1 lg:grid-cols-2 place-items-center w-full full">
         <div className="flex flex-col justify-center w-full">
-          <div className="relative m-8 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px]">
+          <div className="relative m-8 w-[300px] md:w-[500px] h-[300px] md:h-[500px]">
             <div
               className={`absolute top-16 ml-16 bg-gradient-radial from-slate-500 to-off-white blur-md border-4 border-black`}
               style={{
@@ -71,17 +70,12 @@ const HeroBanner = () => {
           </div>
           <div className="text-2xl text-center px-3">
             {summarySkills.map((text, count) => (
-              <>
-                <span
-                  key={text}
-                  className="md:text-2xl text-md text-center px-3 whitespace-nowrap"
-                >
+              <div key={text}>
+                <span className="md:text-2xl text-md text-center px-3 whitespace-nowrap">
                   {text}
                 </span>
-                {count < summarySkills.length - 1 && (
-                  <span>{' ⚬ '}</span>
-                )}
-              </>
+                {count < summarySkills.length - 1 && <span>{' ⚬ '}</span>}
+              </div>
             ))}
           </div>
         </div>
