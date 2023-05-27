@@ -17,7 +17,7 @@ const BackgroundMovingText = () => {
 
   return (
     <div
-      className="text-transparent font-mono lg:text-[30rem] text-[20rem] m-10 blur-md"
+      className="text-transparent font-mono lg:text-[30rem] text-[20rem] m-10 mt-20 blur-md whitespace-nowrap"
       style={{ WebkitTextStroke: '7px gray' }}
     >
       <p

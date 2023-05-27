@@ -37,3 +37,7 @@ button:hover {
 * {
   word-break: break-word;
 }
+
+html {
+  scroll-behavior: smooth;
+}

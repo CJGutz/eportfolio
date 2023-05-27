@@ -6,6 +6,7 @@ import Link from 'next/link';
 import linkedin from '/static/icons/linkedin.svg';
 import github from '/static/icons/github.svg';
 import email from '/static/icons/email.svg';
+import { links } from '../Base/BaseLayout';
 
 const HeroBanner = () => {
   const portrait = useRef<HTMLImageElement>(null);
@@ -44,12 +45,12 @@ const HeroBanner = () => {
   ];
 
   return (
-    <div className="overflow-hidden h-screen">
-      <div className="absolute top-0">
+    <div className="h-screen">
+      <div className="absolute top-0 overflow-hidden">
         <BackgroundMovingText />
       </div>
-      <div className="relative flex flex-col lg:flex-row w-full h-full lg:-top-32">
-        <div className="relative mx-20 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px]">
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 place-items-center w-full h-full lg:-top-32">
+        <div className="relative m-8 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px]">
           <div
             className={`absolute top-16 ml-16 bg-gradient-radial from-slate-500 to-off-white blur-md border-4 border-black`}
             style={{
@@ -65,7 +66,7 @@ const HeroBanner = () => {
             ref={portrait}
           />
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center max-lg:self-start">
           <div className="text-center text-5xl font-bold m-5">
             👋 Welcome, I&apos;m Carl
           </div>
@@ -73,6 +74,19 @@ const HeroBanner = () => {
             {socialButtons.map(({ name, href, icon }) => (
               <Link key={name} href={href} className="mx-2">
                 <Image alt={name} src={icon} width={50} />
+              </Link>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-4 m-5">
+            {links.map(({ name, href }) => (
+              <Link
+                key={name}
+                href={href}
+                className="rounded-xl mvn-button hover:bg-off-white border-4 border-gray-500 hover:border-transparent"
+              >
+                <div className="text-center text-md md:text-2xl font-bold break-keep m-5">
+                  {name}
+                </div>
               </Link>
             ))}
           </div>
