@@ -18,7 +18,7 @@ const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (
     <>
       <Head>
-        <title>Carl Gützkow</title>
+        <title>Carl Johan Gützkow | Portfolio</title>
       </Head>
       <div className="flex flex-col overflow-hidden justify-between items-stretch min-h-screen bg-gradient-radial from-light-red to-light-blue">
         <Header />
