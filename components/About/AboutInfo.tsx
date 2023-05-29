@@ -46,12 +46,10 @@ const AboutInfo = () => {
       <div className="p-10 flex flex-row gap-x-3 overflow-x-scroll snap-x snap-mandatory">
         {images.map(({ src, alt }) => (
           <Image
-            className="snap-center"
+            className="snap-center w-[500px] h-[500px]"
             key={alt}
             src={src}
             alt={alt}
-            width={500}
-            height={500}
           />
         ))}
       </div>
