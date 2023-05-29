@@ -11,7 +11,6 @@ export const links = [
   { name: 'About me', href: '/#about' },
   { name: 'Skills', href: '/skills' },
   { name: 'Experience', href: '/experience' },
-  { name: 'Courses', href: '/courses' },
 ] as { name: string; href: string }[];
 
 const BaseLayout = ({ children }: BaseLayoutProps) => {
