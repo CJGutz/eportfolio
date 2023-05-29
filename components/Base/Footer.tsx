@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { links } from './BaseLayout';
+import { links } from 'components/Base/BaseLayout';
 
 const Footer = () => {
   return (

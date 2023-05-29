@@ -19,7 +19,8 @@
       "data": ["./data"],
       "components": ["./components"],
       "pages": ["./pages"],
-      "static": ["./static"]
+      "static": ["./static"],
+      "styles": ["./styles"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

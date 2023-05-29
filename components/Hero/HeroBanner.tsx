@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import BackgroundMovingText from './BackgroundText';
+import BackgroundMovingText from 'components/Hero/BackgroundText';
 import carl from '/static/carl/eisolutions-profile.jpg';
 import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 import linkedin from '/static/icons/linkedin.svg';
 import github from '/static/icons/github.svg';
 import email from '/static/icons/email.svg';
-import { links } from '../Base/BaseLayout';
+import { links } from 'components/Base/BaseLayout';
 
 const HeroBanner = () => {
   const portrait = useRef<HTMLImageElement>(null);

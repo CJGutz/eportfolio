@@ -3,7 +3,7 @@ import cross from '/static/icons/cross.svg';
 import hamburger from '/static/icons/hamburger.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import { links } from './BaseLayout';
+import { links } from 'components/Base/BaseLayout';
 
 const Header = () => {
   const [openMobileNav, setOpenMobileNav] = useState(false);
