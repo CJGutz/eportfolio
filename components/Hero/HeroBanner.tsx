@@ -70,12 +70,12 @@ const HeroBanner = () => {
           </div>
           <div className="text-2xl text-center px-3">
             {summarySkills.map((text, count) => (
-              <div key={text}>
+              <span key={text}>
                 <span className="md:text-2xl text-md text-center px-3 whitespace-nowrap">
                   {text}
                 </span>
                 {count < summarySkills.length - 1 && <span>{' ⚬ '}</span>}
-              </div>
+              </span>
             ))}
           </div>
         </div>
