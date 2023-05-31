@@ -46,7 +46,7 @@ const HeroBanner = () => {
   ];
 
   return (
-    <div className="">
+    <div>
       <div className="absolute top-0 overflow-visible">
         <BackgroundMovingText />
       </div>
