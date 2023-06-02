@@ -22,15 +22,19 @@ const ExperienceTimelineNode = ({
     ' ' +
     date.getFullYear();
   return (
-    <li className="mb-12 ml-10">
+    <li className="mt-12 ml-10">
       <div
         ref={imageRef}
         className={`${
           imageInRange ? 'translate-x-0' : '-translate-x-10 opacity-0'
-        } duration-700 transition-all absolute w-8 h-8 bg-gray-200 rounded-full mt-6 -left-4 border border-black`}
+        } duration-700 transition-all absolute w-12 h-12 bg-gray-200 rounded-full mt-4 -left-6 border border-black`}
       >
         {experience.image && (
-          <Image src={rightArrow} alt={'arrow'} className="w-full h-full" />
+          <Image
+            src={experience.image}
+            alt={`Image of ${experience.title}`}
+            className="w-full h-full rounded-full"
+          />
         )}
       </div>
       <div
