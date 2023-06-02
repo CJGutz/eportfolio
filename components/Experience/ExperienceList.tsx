@@ -6,7 +6,7 @@ const ExperienceList = () => {
   experienceList.sort((a, b) => a[1].dateStart.getTime() - b[1].dateStart.getTime());
 
   return (
-    <div className="relative border-l border-gray-600 list-none">
+    <div className="relative border-l border-gray-600 list-none mx-8">
       {experienceList.map((experience) => (
         <ExperienceTimelineNode
           key={experience[0]}

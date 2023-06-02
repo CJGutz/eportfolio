@@ -33,7 +33,7 @@ const ExperienceTimelineNode = ({
       <p className="mb-4 text-base font-normal text-gray-500 ">
         {experience.shortDescription}
       </p>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-col sm:flex-row gap-4 place-items-start">
         {experience.demoLink && (
           <a
             href={experience.demoLink}
