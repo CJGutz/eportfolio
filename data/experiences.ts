@@ -14,7 +14,8 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
       'quantum-algorithms',
       {
         title: 'Trying out Quantum Computing',
-        shortDescription: 'Followed a course on Quantum Computing and tried out some algorithms with the Qiskit Python library.',
+        shortDescription:
+          'Followed a course on Quantum Computing and tried out some algorithms with the Qiskit Python library.',
         dateStart: new Date(2021, 6, 1),
         sourceLink: 'https://github.com/CJGutz/Quantum-Algorithms',
       },
@@ -35,7 +36,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
       {
         title: 'DevOps Team Leader - Hackerspace',
         shortDescription:
-          'For a year I managed the DevOps team at Hackerspace NTNU. I had responsibility for the development lifecycle, server infrastructure and the team\'s well-being.',
+          "For a year I managed the DevOps team at Hackerspace NTNU. I had responsibility for the development lifecycle, server infrastructure and the team's well-being.",
         dateStart: new Date(2022, 2, 1),
         dateEnd: new Date(2023, 2, 1),
         demoLink: 'https://hackerspace-ntnu.no',
