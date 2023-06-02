@@ -62,6 +62,8 @@ const ExperienceTimelineNode = ({
           {experience.demoLink && (
             <a
               href={experience.demoLink}
+              rel="noreferrer"
+              target="_blank"
               className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
             >
               Demo
@@ -71,6 +73,8 @@ const ExperienceTimelineNode = ({
           {experience.sourceLink && (
             <a
               href={experience.sourceLink}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
             >
               Source Code
