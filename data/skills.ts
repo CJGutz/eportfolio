@@ -32,7 +32,7 @@ export const Skills: Map<string, SkillType> = new Map([
     {
       name: 'Java',
       description:
-        'Java was used extencively as the main language in the university.',
+        'Java was used extensively at NTNU and was often required for school projects with Spring Boot, Maven and more.',
       level: 5,
       icon: java,
     },
