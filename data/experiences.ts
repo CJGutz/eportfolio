@@ -32,5 +32,27 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         demoLink: 'https://eisolutions.no',
       },
     ],
+    [
+      'erfe',
+      {
+        title: 'Ei Solutions',
+        shortDescription:
+          'Created the Back-end for a automatic EU taxonomy reporter. I also created the landing page.',
+        dateStart: new Date(2022, 8, 1),
+        dateEnd: new Date(Date.now()),
+        demoLink: 'https://eisolutions.no',
+      },
+    ],
+    [
+      'eisutions',
+      {
+        title: 'Ei Solutions',
+        shortDescription:
+          'Created the Back-end for a automatic EU taxonomy reporter. I also created the landing page.',
+        dateStart: new Date(2022, 8, 1),
+        dateEnd: new Date(Date.now()),
+        demoLink: 'https://eisolutions.no',
+      },
+    ],
   ]
 );
