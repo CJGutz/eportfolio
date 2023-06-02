@@ -3,7 +3,7 @@ import SkillCard from 'components/SkillLayout/SkillCard';
 
 const SkillList = () => {
   let skillList = Array.from(Skills.entries());
-  skillList.sort((a, b) => (b[1].level ?? 0) - (a[1].level ?? 0));
+  skillList.sort((a, b) => ((b[1].level ?? 0) - (a[1].level ?? 0)) + (b[1].name.length > a[1].name.length ? 0.5 : -0.5));
 
   return (
     <div className="w-full my-10">
