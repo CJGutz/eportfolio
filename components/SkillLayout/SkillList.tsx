@@ -2,7 +2,7 @@ import { Skills } from 'data/skills';
 import SkillCard from 'components/SkillLayout/SkillCard';
 
 const SkillList = () => {
-  let skillList = Array.from(Skills.entries());
+  const skillList = Array.from(Skills.entries());
   skillList.sort(
     (a, b) =>
       (b[1].level ?? 0) -
