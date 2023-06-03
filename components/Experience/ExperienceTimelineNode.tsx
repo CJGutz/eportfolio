@@ -3,6 +3,8 @@ import useIsInClientRange from 'hooks/IsInClientRange';
 import Image from 'next/image';
 import { createRef, useRef } from 'react';
 import rightArrow from 'static/icons/rightArrow.svg';
+import { Skills } from 'data/skills';
+import Link from 'next/link';
 
 const ExperienceTimelineNode = ({
   id,
@@ -64,7 +66,7 @@ const ExperienceTimelineNode = ({
               href={experience.demoLink}
               rel="noreferrer"
               target="_blank"
-              className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
+              className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-black bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
             >
               Demo
               <Image src={rightArrow} alt="right arrow" className="ml-2" />
@@ -75,12 +77,23 @@ const ExperienceTimelineNode = ({
               href={experience.sourceLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
+              className="inline-flex mvn-button px-4 py-2 text-sm font-medium text-black bg-white border border-gray-200 rounded-lg hover:bg-gray-100 focus:z-10 focus:ring-4 focus:outline-transparent focus:ring-gray-200 focus:text-blue-700 "
             >
               Source Code
               <Image src={rightArrow} alt="right arrow" className="ml-2" />
             </a>
           )}
+        </div>
+        <div className="flex flex-row flex-wrap mt-3 gap-3">
+          {experience.tech.map((tech) => (
+            <Link
+              key={tech}
+              href={`/skills#${Skills.has(tech) ? tech : ''}`}
+              className="bg-blue-500 mvn-button rounded-md opacity-60 px-3 py-1 text-white text-xs"
+            >
+              {Skills.get(tech)?.name ?? tech}
+            </Link>
+          ))}
         </div>
       </div>
     </li>

@@ -25,7 +25,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         dateStart: new Date(2021, 6, 1),
         image: qiskit,
         sourceLink: 'https://github.com/CJGutz/Quantum-Algorithms',
-        tech: ['python'], 
+        tech: ['python'],
       },
     ],
     [
@@ -38,7 +38,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         image: tihlde,
         demoLink: 'https://tihlde.org',
         sourceLink: 'https://github.com/TIHLDE/Lepton',
-        tech: ['django', 'python', 'docker']
+        tech: ['django', 'python', 'docker'],
       },
     ],
     [
@@ -65,7 +65,15 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         dateEnd: new Date(Date.now()),
         image: eisolutions,
         demoLink: 'https://eisolutions.no',
-        tech: ['django', 'python', 'docker', 'typescript', 'nextjs', 'qgis', 'postgis'],
+        tech: [
+          'django',
+          'python',
+          'docker',
+          'typescript',
+          'nextjs',
+          'qgis',
+          'postgis',
+        ],
       },
     ],
     [
