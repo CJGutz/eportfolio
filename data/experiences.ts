@@ -11,6 +11,7 @@ export type ExperienceListNodeType = {
   dateEnd?: Date;
   demoLink?: string;
   sourceLink?: string;
+  tech: string[];
 };
 
 export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
@@ -24,6 +25,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         dateStart: new Date(2021, 6, 1),
         image: qiskit,
         sourceLink: 'https://github.com/CJGutz/Quantum-Algorithms',
+        tech: ['python'], 
       },
     ],
     [
@@ -36,6 +38,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         image: tihlde,
         demoLink: 'https://tihlde.org',
         sourceLink: 'https://github.com/TIHLDE/Lepton',
+        tech: ['django', 'python', 'docker']
       },
     ],
     [
@@ -49,6 +52,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         image: hackerspace,
         demoLink: 'https://hackerspace-ntnu.no',
         sourceLink: 'https://github.com/hackerspace-ntnu',
+        tech: ['docker', 'python', 'django'],
       },
     ],
     [
@@ -61,6 +65,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         dateEnd: new Date(Date.now()),
         image: eisolutions,
         demoLink: 'https://eisolutions.no',
+        tech: ['django', 'python', 'docker', 'typescript', 'nextjs', 'qgis', 'postgis'],
       },
     ],
     [
@@ -74,6 +79,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         image: hackerspace,
         demoLink: 'https://hackerspace-ntnu.no',
         sourceLink: 'https://github.com/hackerspace-ntnu',
+        tech: [],
       },
     ],
   ]
