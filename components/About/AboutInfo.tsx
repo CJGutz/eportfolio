@@ -1,4 +1,3 @@
-import eisolutionsProfile from '/static/carl/eisolutions-profile.jpg';
 import gotlandGaard from '/static/carl/gotland-gaard.jpg';
 import hovedbygget from '/static/carl/hovedbygget.jpg';
 import indexIntervju from '/static/carl/index-intervju.jpg';
@@ -7,9 +6,15 @@ import ski from '/static/carl/ski.jpg';
 import storheia from '/static/carl/storheia.jpg';
 import Image from 'next/image';
 
+
 const AboutInfo = () => {
-  const aboutInfoText =
-    "Oh no. I didn't think that you would actually read this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in augue nulla. Fusce fringilla placerat ante vel gravida. Sed elementum porta iaculis. Pellentesque vel justo nibh. Nam lorem lacus, porttitor eget congue a, eleifend sit amet felis. Praesent rutrum tempor egestas. Mauris purus arcu, lobortis quis nibh in, varius malesuada velit.";
+  const aboutInfoText = `
+    Hello and welcome to my personal website. My name is Carl Johan Gützkow and I am currently studying Computer Science at NTNU. 
+    Learning new things is what drives me. I am always looking for new challenges that might improve my skills or to learn something entirely new.
+    I love to work in and manage teams were everyone is open to new ideas and discussions.
+    When everyone understands the goal and is motivated by it, everyone can be effective.
+    My ideal work environment provide opportunities for growth while learning from experienced proffessionals.
+  `;
 
   const images = [
     {
@@ -46,14 +51,16 @@ const AboutInfo = () => {
       <div className="p-10 flex flex-row gap-x-3 overflow-x-scroll snap-x snap-mandatory">
         {images.map(({ src, alt }) => (
           <Image
-            className="snap-center w-[500px] h-[500px]"
+            className="snap-center w-[500px] max-h-[500px]"
             key={alt}
             src={src}
             alt={alt}
           />
         ))}
       </div>
-      <p className="p-4">{aboutInfoText}</p>
+      <div className='grid place-items-center'>
+      <p className="p-10 max-w-4xl ">{aboutInfoText}</p>
+      </div>
     </div>
   );
 };
