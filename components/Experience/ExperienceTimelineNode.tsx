@@ -1,7 +1,7 @@
 import { ExperienceListNodeType } from 'data/experiences';
 import useIsInClientRange from 'hooks/IsInClientRange';
 import Image from 'next/image';
-import { createRef, useRef } from 'react';
+import { createRef } from 'react';
 import rightArrow from 'static/icons/rightArrow.svg';
 import { Skills } from 'data/skills';
 import Link from 'next/link';

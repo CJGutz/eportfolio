@@ -6,14 +6,13 @@ import ski from '/static/carl/ski.jpg';
 import storheia from '/static/carl/storheia.jpg';
 import Image from 'next/image';
 
-
 const AboutInfo = () => {
   const aboutInfoText = `
     Hello and welcome to my personal website. My name is Carl Johan Gützkow and I am currently studying Computer Science at NTNU. 
     Learning new things is what drives me. I am always looking for new challenges that might improve my skills or to learn something entirely new.
     I love to work in and manage teams were everyone is open to new ideas and discussions.
     When everyone understands the goal and is motivated by it, everyone can be effective.
-    My ideal work environment provide opportunities for growth while learning from experienced proffessionals.
+    My ideal position and work environment provide opportunities for growth while learning from experienced proffessionals.
   `;
 
   const images = [
@@ -44,14 +43,14 @@ const AboutInfo = () => {
   ];
 
   return (
-    <div className="w-full mt-96 p-10">
+    <div className="w-full mt-96 sm-p-10 p-4">
       <h1 id="about" className="text-4xl font-bold">
         About me
       </h1>
       <div className="p-10 flex flex-row gap-x-3 overflow-x-scroll snap-x snap-mandatory">
         {images.map(({ src, alt }) => (
           <Image
-            className="snap-center w-[500px] max-h-[500px]"
+            className="snap-center max-w-[500px] h-[500px]"
             key={alt}
             src={src}
             alt={alt}
