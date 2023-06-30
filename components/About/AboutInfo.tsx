@@ -14,7 +14,7 @@ const AboutInfo = () => {
     learning advanced concepts and technologies.
     
     My story of programming began in 7th grade with the kid friendly 
-    coding environment Scratch. From that point on I taught myself many programming
+    coding environment Scratch. From that point on I taught myself many computer science
     concepts and explored some of the possibilities in this vast field. 
    
     Studying computer science, I further developed my skills and attained a deeper
