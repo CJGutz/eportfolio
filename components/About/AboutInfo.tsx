@@ -8,11 +8,19 @@ import Image from 'next/image';
 
 const AboutInfo = () => {
   const aboutInfoText = `
-    Hello and welcome to my personal website. My name is Carl Johan Gützkow and I am currently studying Computer Science at NTNU. 
-    Learning new things is what drives me. I am always looking for new challenges that might improve my skills or to learn something entirely new.
-    I love to work in and manage teams were everyone is open to new ideas and discussions.
-    When everyone understands the goal and is motivated by it, everyone can be effective.
-    My ideal position and work environment provide opportunities for growth while learning from experienced proffessionals.
+    I'm a 21 year old software developer, GIS enthusiast, nature
+    explorer and team enhancer. Team development is my passion.
+    I enjoy working with people whom I can share my competence with while also
+    learning advanced concepts and technologies.
+    
+    My story of programming began in 7th grade with the kid friendly 
+    coding environment Scratch. From that point on I taught myself many programming
+    concepts and explored some of the possibilities in this vast field. 
+   
+    Studying computer science, I further developed my skills and attained a deeper
+    understanding of the field while building a foundation for valuable coding 
+    practices. Alongside my studies, I join the voluntary group Index. There I experienced how effective
+    team work enhanced both the software and the joy of the development process.
   `;
 
   const images = [
@@ -57,8 +65,10 @@ const AboutInfo = () => {
           />
         ))}
       </div>
-      <div className='grid place-items-center'>
-      <p className="p-10 max-w-4xl ">{aboutInfoText}</p>
+      <div className="grid place-items-center">
+        <p className="p-10 max-w-4xl whitespace-pre-line text-lg">
+          {aboutInfoText}
+        </p>
       </div>
     </div>
   );
