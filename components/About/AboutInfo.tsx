@@ -19,7 +19,7 @@ const AboutInfo = () => {
    
     Studying computer science, I further developed my skills and attained a deeper
     understanding of the field while building a foundation for valuable coding 
-    practices. Alongside my studies, I join the voluntary group Index. 
+    practices. Alongside my studies, I join the voluntary groups Index and Hackerspace NTNU DevOps. 
     There I experienced how effective team work enhanced both the software and
     the joy of the development process.
   `;
