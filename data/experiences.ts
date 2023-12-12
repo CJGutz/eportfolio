@@ -1,4 +1,5 @@
 import eisolutions from 'static/experiences/eisolutions.jpg';
+import gis_stackexchange from 'static/experiences/gis-stackexchange.png';
 import hackerspace from 'static/experiences/hackerspace.png';
 import tihlde from 'static/experiences/tihlde.jpg';
 import qiskit from 'static/experiences/qiskit.png';
@@ -48,7 +49,7 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         shortDescription:
           "For a year I managed the DevOps team at Hackerspace NTNU. I had responsibility for the development lifecycle, server infrastructure and the team's well-being.",
         dateStart: new Date(2022, 2, 1),
-        dateEnd: new Date(2023, 2, 1),
+        dateEnd: new Date(2024, 2, 1),
         image: hackerspace,
         demoLink: 'https://hackerspace-ntnu.no',
         sourceLink: 'https://github.com/hackerspace-ntnu',
@@ -87,6 +88,19 @@ export const ExperiencesListNode: Map<string, ExperienceListNodeType> = new Map(
         image: hackerspace,
         demoLink: 'https://hackerspace-ntnu.no',
         sourceLink: 'https://github.com/hackerspace-ntnu',
+        tech: [],
+      },
+    ],
+    [
+      'sosi-rs',
+      {
+        title: 'SOSI parser in Rust',
+        shortDescription:
+          'A parser for the SOSI format written in Rust. A side project to learn Rust while also creating a parser for a widely used format in Norway.',
+        dateStart: new Date(2023, 9, 15),
+        dateEnd: new Date(Date.now()),
+        image: gis_stackexchange,
+        sourceLink: 'https://github.com/CJGutz/SOSIrs',
         tech: [],
       },
     ],
