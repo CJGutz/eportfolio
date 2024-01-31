@@ -4,7 +4,7 @@ import ExperienceTimelineNode from './ExperienceTimelineNode';
 const ExperienceList = () => {
   const experienceList = Array.from(ExperiencesListNode.entries());
   experienceList.sort(
-    (a, b) => a[1].dateStart.getTime() - b[1].dateStart.getTime()
+    (a, b) => b[1].dateStart.getTime() - a[1].dateStart.getTime()
   );
 
   return (
