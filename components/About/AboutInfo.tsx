@@ -1,16 +1,15 @@
-import gotlandGaard from '/static/carl/gotland-gaard.jpg';
-import hovedbygget from '/static/carl/hovedbygget.jpg';
-import indexIntervju from '/static/carl/index-intervju.jpg';
-import pizBoe from '/static/carl/piz-boe.jpg';
-import ski from '/static/carl/ski.jpg';
-import storheia from '/static/carl/storheia.jpg';
+import gotlandGaard from '/static/carl/gotland-gaard.webp';
+import hovedbygget from '/static/carl/hovedbygget.webp';
+import indexIntervju from '/static/carl/index-intervju.webp';
+import pizBoe from '/static/carl/piz-boe.webp';
+import ski from '/static/carl/ski.webp';
+import storheia from '/static/carl/storheia.webp';
 import Image from 'next/image';
 
 const AboutInfo = () => {
   const aboutInfoText = `
     I'm a 21 year old software developer, GIS enthusiast, nature
-    explorer and team enhancer. Team development is my passion.
-    I enjoy working with people whom I can share my competence with while also
+    explorer and team enhancer. I enjoy working with people whom I can share my competence with while also
     learning advanced concepts and technologies.
     
     My story of programming began in 7th grade with the kid friendly 
@@ -19,7 +18,7 @@ const AboutInfo = () => {
    
     Studying computer science, I further developed my skills and attained a deeper
     understanding of the field while building a foundation for valuable coding 
-    practices. Alongside my studies, I join the voluntary groups Index and Hackerspace NTNU DevOps. 
+    practices. Alongside my studies, I joined the voluntary groups Index and Hackerspace NTNU DevOps. 
     There I experienced how effective team work enhanced both the software and
     the joy of the development process.
   `;

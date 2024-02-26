@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import BackgroundMovingText from 'components/Hero/BackgroundText';
-import carl from '/static/carl/eisolutions-profile.jpg';
+import carl from '/static/carl/eisolutions-profile.webp';
 import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 import linkedin from '/static/icons/linkedin.svg';
