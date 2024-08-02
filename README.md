@@ -1,3 +1,8 @@
+
+### ⚠️ Note: This repository is no longer in used. The eportfolio has been moved to [unchained](https://github.com/cjgutz/unchained) 
+
+--- 
+
 This is a [Next.js](https://nextjs.org/) project using [tailwindcss](https://tailwindcss.com/)
 
 ## Getting Started
